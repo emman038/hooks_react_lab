@@ -16,7 +16,7 @@ const ColourPickerContainer = () => {
         let blue255 = Math.ceil(blue * 2.55);
 
         setRGB(`rgb(${red255}, ${green255}, ${blue255})`)
-    }, [red, green, blue]);
+    }, [red, green, blue]);     // The things inside the Array are what is watched. When any of them change the callback function runs
 
     return ( 
         <section>
